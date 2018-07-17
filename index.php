@@ -28,9 +28,9 @@ $month_names = array('Januar','Februar','März','April','Mai','Juni','Juli','Aug
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <title>Schichtplan <?php echo $year;?></title>
-<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-<link rel="alternate stylesheet" type="text/css" href="druck.css" title="Druck" />
-<link rel="stylesheet" type="text/css" media="print, embossed" href="druck.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/static/main.css" />
+<link rel="alternate stylesheet" type="text/css" href="/static/druck.css" title="Druck" />
+<link rel="stylesheet" type="text/css" media="print, embossed" href="/static/druck.css" />
 </head>
 <body>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
@@ -83,7 +83,7 @@ $month_names = array('Januar','Februar','März','April','Mai','Juni','Juli','Aug
 
 <?php echo $schedule->render(); ?>
 <textarea id="output" style="display: none;"></textarea>
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="/static/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js.js"></script>
 </body>
 </html>
