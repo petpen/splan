@@ -6,4 +6,4 @@ handlers:
   static_dir: static
 
 - url: /.*
-script: index.php
+  script: index.php
